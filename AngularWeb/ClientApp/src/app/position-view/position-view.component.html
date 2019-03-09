@@ -1,0 +1,12 @@
+<div>
+  
+  <div *ngIf="_positions">
+    <h1>{{_positions.grid}}</h1>
+    <ul>
+      <li *ngFor="let item of _positions.values;let curIdx = index">
+        <div>{{item.key}}</div>
+        <div>{{item.value}}</div>
+      </li> 
+    </ul>
+  </div>
+</div>
